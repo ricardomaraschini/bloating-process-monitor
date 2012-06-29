@@ -1,0 +1,14 @@
+BLOATING PROCESS MONITOR
+
+This plugin uses linear regression algorithm to determine if the memory
+usage of a given process(by name or by pid) is growing up on time.
+It was developed using Perl and internally uses the ps command line utility
+to determine the resident size of the process. 
+
+Optionally, the plugin gives you the possibility to generate a graph showing 
+the memory increase. 
+
+Requires the following perl packages: 
+
+Statistics::OLS > 0.07 
+GD::Graph::lines - Only in case of memory usage graph generation 
